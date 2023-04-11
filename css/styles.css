@@ -43,16 +43,13 @@ img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 120px;
-  padding-bottom: 120px;
   gap: 24px;
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
-
 /* reset end */
 .card-content {
   padding: 32px 16px;
+  border: 1px solid var(--color-cornflower);
+  margin-bottom: 8px;
 }
 
 .list {
@@ -72,17 +69,23 @@ img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  border-bottom: 1px solid var(--color-cornflower);
+}
+.portfolio-container {
+  padding: 96px 0 120px;
+  border-bottom: 1px solid var(--color-cornflower);
 }
 .menu-nav {
   display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .menu-list {
   display: flex;
   align-items: center;
   margin-right: 332px;
   gap: 30px;
+  padding: 24px 0;
 }
 .menu-link {
   display: block;
@@ -150,15 +153,25 @@ img {
   padding-top: 129px;
   padding-bottom: 113px;
 }
+.title-hero {
+  max-width: 496px;
+  text-align: center;
+}
+.container-hero {
+  padding: 188px 0;
+}
 .hero-button {
-  display: flex;
+  display: block;
   flex-direction: row;
   align-items: center;
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   margin-left: 480px;
   margin-right: 480px;
   margin-top: 48px;
   border-radius: 4px;
+  border: none;
   background-color: var(--color-iris);
   color: var(--color-white);
   font-family: inherit;
@@ -174,13 +187,17 @@ img {
 }
 
 /* Our advantages */
-.container-advantages > .list {
+.container-advantages {
   display: flex;
   flex-wrap: nowrap;
   gap: 24px;
+  padding: 120px 0;
+  border-radius: 0px 0px 4px 4px;
 }
 /* What are we doing */
 .title-section-item {
+  text-align: center;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -197,6 +214,10 @@ img {
   color: var(--color-navy-blue);
   margin-bottom: 72px;
 }
+.section-item {
+  width: calc((100% - 72px) / 4);
+  gap: 24px;
+}
 .section-list {
   display: flex;
   flex-wrap: wrap;
@@ -205,6 +226,10 @@ img {
 }
 
 /* Our Team  */
+.team-container {
+  padding-bottom: 120px;
+}
+
 .section-team {
   background-color: var(--color-cloud);
 }
@@ -231,6 +256,7 @@ img {
   padding-bottom: 72px;
   box-sizing: border-box;
   border-radius: 4px;
+  justify-content: center;
 }
 .button {
   font-family: inherit;
@@ -269,10 +295,14 @@ img {
   color: var(--color-white);
   background-color: var(--color-ocean);
   font-weight: 500;
+  border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 .portfolio-item {
   text-decoration: none;
   width: calc((100%- (2 * 24)) / 3);
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -282,6 +312,7 @@ img {
 }
 .text {
   color: var(--color-slate);
+  text-align: center;
 }
 .footer {
   background-color: var(--color-navy-blue);
@@ -289,15 +320,13 @@ img {
   text-decoration: none;
 }
 .footer-container {
-  display: flex;
+  display: inline-block;
   align-items: center;
   width: 1440px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  margin-bottom: 16px;
+  padding: 100px 0px;
 }
 .footer-text {
   color: var(--color-cloud);
