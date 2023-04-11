@@ -20,7 +20,7 @@
   <body class="body">
     <!-- Header section -->
     <header class="header">
-      <div class="container">
+      <div class="header-container">
         <nav class="menu-nav">
           <a href="./index.html" class="logo link">
             Web<span class="logo-dark">Studio</span></a
@@ -51,15 +51,27 @@
     </header>
     <main class="main">
       <section class="section">
-        <div class="container">
+        <div class="portfolio-container container">
           <h1 hidden>Portfolio</h1>
           <!-- Options -->
-          <ul class="section-list list">
-            <li><button type="button" class="button">All</button></li>
-            <li><button type="button" class="button">Web Site</button></li>
-            <li><button type="button" class="button">App</button></li>
-            <li><button type="button" class="button">Design</button></li>
-            <li><button type="button" class="button">Marketing</button></li>
+          <ul class="section-list-buttons list">
+            <li>
+              <button type="button" class="button-all button">All</button>
+            </li>
+            <li>
+              <button type="button" class="button-web button">Web Site</button>
+            </li>
+            <li>
+              <button type="button" class="button-app button">App</button>
+            </li>
+            <li>
+              <button type="button" class="button-design button">Design</button>
+            </li>
+            <li>
+              <button type="button" class="button-marketing button">
+                Marketing
+              </button>
+            </li>
           </ul>
           <!-- Our products -->
           <ul class="section-list list">
@@ -70,10 +82,12 @@
                   alt="Banking App Interface Concept"
                   width="360"
                 />
-                <h2 class="title-section-item">
-                  Banking App Interface Concept
-                </h2>
-                <p class="portfolio-text">App</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="portfolio-text">App</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
@@ -83,22 +97,28 @@
                   alt="Cashless Payment"
                   width="360"
                 />
-                <h2 class="title-section-item">Cashless Payment</h2>
-                <p class="portfolio-text">Marketing</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Cashless Payment</h2>
+                  <p class="portfolio-text">Marketing</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
               <a class="link" href=""
                 ><img src="./images/pc.jpg" alt="Meditation App" width="360" />
-                <h2 class="title-section-item">Meditation App</h2>
-                <p class="portfolio-text">App</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Meditation App</h2>
+                  <p class="portfolio-text">App</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
               <a class="link" href=""
                 ><img src="./images/car.jpg" alt="Taxi Service" width="360" />
-                <h2 class="title-section-item">Taxi Service</h2>
-                <p class="portfolio-text">Marketing</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Taxi Service</h2>
+                  <p class="portfolio-text">Marketing</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
@@ -108,8 +128,10 @@
                   alt="Screen Illustrations"
                   width="360"
                 />
-                <h2 class="title-section-item">Screen Illustrations</h2>
-                <p class="portfolio-text">Design</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Screen Illustrations</h2>
+                  <p class="portfolio-text">Design</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
@@ -119,8 +141,10 @@
                   alt="Online Courses"
                   width="360"
                 />
-                <h2 class="title-section-item">Online Courses</h2>
-                <p class="portfolio-text">Marketing</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Online Courses</h2>
+                  <p class="portfolio-text">Marketing</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
@@ -130,22 +154,28 @@
                   alt="Instagram Stories Concept"
                   width="360"
                 />
-                <h2 class="title-section-item">Instagram Stories Concept</h2>
-                <p class="portfolio-text">Design</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Instagram Stories Concept</h2>
+                  <p class="portfolio-text">Design</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
               <a class="link" href=""
                 ><img src="./images/bag.jpg" alt="Organic Food" width="360" />
-                <h2 class="title-section-item">Organic Food</h2>
-                <p class="portfolio-text">Web Site</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Organic Food</h2>
+                  <p class="portfolio-text">Web Site</p>
+                </div></a
               >
             </li>
             <li class="portfolio-item">
               <a class="link" href="">
                 <img src="./images/coffe.jpg" alt="Fresh Coffee" width="360" />
-                <h2 class="title-section-item">Fresh Coffee</h2>
-                <p class="portfolio-text">Web Site</p></a
+                <div class="card-content">
+                  <h2 class="title-section-item">Fresh Coffee</h2>
+                  <p class="portfolio-text">Web Site</p>
+                </div></a
               >
             </li>
           </ul>
@@ -154,7 +184,7 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container">
         <a href="./index.html" class="logo link">
           Web<span class="logo-light">Studio</span></a
         >
