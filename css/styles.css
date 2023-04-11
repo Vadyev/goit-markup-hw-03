@@ -14,6 +14,7 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 }
+/* Body */
 .body {
   font-family: var(--main-font);
   font-size: 16px;
@@ -32,26 +33,18 @@ h6,
 p {
   margin: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 .container {
-  width: 1158px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
   gap: 24px;
 }
-/* reset end */
-.card-content {
-  padding: 32px 16px;
-  border: 1px solid var(--color-cornflower);
-  margin-bottom: 8px;
-}
-
 .list {
   list-style: none;
   padding: 0;
@@ -60,32 +53,27 @@ img {
 .link {
   text-decoration: none;
 }
+/* reset end */
+
 /* Header section */
+.header {
+  border-bottom: 1px solid var(--color-cornflower);
+}
 .header-container {
   display: flex;
   align-items: center;
-  width: 1158px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom: 1px solid var(--color-cornflower);
-}
-.portfolio-container {
-  padding: 96px 0 120px;
   border-bottom: 1px solid var(--color-cornflower);
 }
 .menu-nav {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-right: auto;
 }
 .menu-list {
   display: flex;
   align-items: center;
-  margin-right: 332px;
-  gap: 30px;
-  padding: 24px 0;
+  gap: 40px;
 }
 .menu-link {
   display: block;
@@ -124,15 +112,13 @@ img {
 }
 .address-list {
   display: flex;
+  align-items: center;
   gap: 40px;
-}
-.address-item {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .address {
   font-style: normal;
+  margin-right: auto;
+  margin-left: 332px;
 }
 .address .link {
   text-decoration: none;
@@ -152,15 +138,15 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+}
+.title-hero {
+  max-width: 496px;
+  margin: 0 auto 48px auto;
   text-align: center;
   padding-top: 129px;
   padding-bottom: 113px;
 }
-.title-hero {
-  max-width: 496px;
-  text-align: center;
-}
-.container-hero {
+.hero-container {
   padding: 188px 0;
 }
 .hero-button {
@@ -190,14 +176,31 @@ img {
 }
 
 /* Our advantages */
-.container-advantages {
+.advantages-container {
   display: flex;
   flex-wrap: nowrap;
   gap: 24px;
   padding: 120px 0;
   border-radius: 0px 0px 4px 4px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* What are we doing */
+.section-container {
+  padding-bottom: 120px;
+}
+
 .title-section-item {
   text-align: center;
   margin-bottom: 8px;
@@ -224,6 +227,7 @@ img {
 .section-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
   list-style-type: none;
   letter-spacing: 0.02em;
 }
@@ -231,6 +235,11 @@ img {
 /* Our Team  */
 .team-container {
   padding-bottom: 120px;
+}
+.card-content {
+  padding: 32px 16px;
+  border: 1px solid var(--color-cornflower);
+  margin-bottom: 8px;
 }
 
 .section-team {
@@ -246,6 +255,12 @@ img {
   cursor: pointer;
 }
 /* Portfolio */
+.portfolio-container {
+  padding: 96px 0 120px;
+  border-bottom: 1px solid var(--color-cornflower);
+}
+
+/* Buttons */
 .section-list-buttons {
   display: flex;
   flex-direction: row;
@@ -301,6 +316,7 @@ img {
   border: 1px solid transparent;
   border: 1px solid transparent;
 }
+/* Portfolio list */
 .portfolio-item {
   text-decoration: none;
   width: calc((100%- (2 * 24)) / 3);
@@ -317,10 +333,17 @@ img {
   color: var(--color-slate);
   text-align: center;
 }
+/* Footer */
+
 .footer {
   background-color: var(--color-navy-blue);
   color: var(--color-cloud);
   text-decoration: none;
+  padding: 100px 0px;
+}
+.footer-container a {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-container {
   display: inline-block;
@@ -329,9 +352,9 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 16px;
-  padding: 100px 0px;
 }
 .footer-text {
   color: var(--color-cloud);
   text-decoration: none;
+  width: 264px;
 }
