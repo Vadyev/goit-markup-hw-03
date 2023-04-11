@@ -77,8 +77,7 @@ img {
 }
 .menu-link {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 24px 0;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -234,12 +233,14 @@ img {
 
 /* Our Team  */
 .team-container {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .card-content {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   margin-bottom: 8px;
+  border-top: none;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-team {
@@ -275,6 +276,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   justify-content: center;
+  margin-bottom: 72px;
 }
 .button {
   font-family: inherit;
@@ -282,7 +284,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   display: flex;
-  text-align: center;
+  align-items: center;
   letter-spacing: 0.04em;
   background-color: var(--color-cloud);
   color: var(--color-iris);
@@ -290,21 +292,6 @@ img {
   padding: 12px 24px;
   border: 1px solid var(--color-cornflower);
   border-radius: 4px;
-}
-.button-all {
-  width: 69px;
-}
-.button-web {
-  width: 116px;
-}
-.button-app {
-  width: 78px;
-}
-.button-design {
-  width: 101px;
-}
-.button-marketing {
-  width: 126px;
 }
 
 .button:hover,
@@ -317,12 +304,15 @@ img {
   border: 1px solid transparent;
 }
 /* Portfolio list */
-.portfolio-item {
-  text-decoration: none;
+.portfolio-container {
+  padding: 96px 0 120px;
+}
+.portfolio-list {
   width: calc((100%- (2 * 24)) / 3);
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
