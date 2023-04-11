@@ -182,6 +182,7 @@ img {
   padding: 120px 0;
   border-radius: 0px 0px 4px 4px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -312,7 +313,9 @@ img {
   column-gap: 24px;
   row-gap: 48px;
 }
-
+.section-item.text {
+  text-align: left;
+}
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
