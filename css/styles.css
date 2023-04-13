@@ -136,7 +136,7 @@ img {
   margin: 0 auto 48px auto;
   text-align: center;
 }
-.hero-container {
+.hero-section {
   padding: 188px 0;
 }
 .hero-button {
@@ -235,6 +235,7 @@ img {
   border: 1px solid var(--color-cornflower);
   border-top: none;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 .section-list > li {
   font-family: "Roboto", sans-serif;
@@ -331,6 +332,10 @@ img {
   text-transform: uppercase;
   color: var(--color-iris);
   text-decoration: none;
+}
+.footer-logo.link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   color: var(--color-cloud);
